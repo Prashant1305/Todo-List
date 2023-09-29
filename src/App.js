@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// import './App.css'
 import AddTask from './components/AddTask';
 import DisTask from './components/DisTask';
 import { ToastContainer, toast } from 'react-toastify';
@@ -13,7 +12,6 @@ function App() {
         })
     }
     function remove(removeTxt) {
-        console.log(removeTxt);
         setTaskList(taskList.filter((txt) => txt !== removeTxt))
     }
     return (
