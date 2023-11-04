@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import { toast } from 'react-toastify';
 
 
-function AddTask({ add }) {
-    const [inpTask, setTask] = useState("");
+function AddTask({ add, taskList }) {
+    // const taskList=localStorage.getItem(taskList);
+    const [inpTask, setTask] = useState();
     function handleTask(e) {
-        setTask(e.target.value);
+        setTask({ name: e.target.value, completed: false });
     }
     function handleClick(e) {
 

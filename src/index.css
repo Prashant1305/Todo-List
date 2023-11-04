@@ -78,6 +78,13 @@ input {
     font-size: 1.2rem;
 }
 
+.checkedLabel {
+    font-size: 1.2rem;
+    /* border: 2px solid rgb(0, 255, 55); */
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
 input[type='checkbox'] {
     height: 32px;
     width: 32px;
